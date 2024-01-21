@@ -5,8 +5,8 @@ import base64
 
 BUFF_SIZE = 65536
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-host_ip = '45.32.74.181' 
-port = 8009
+host_ip = '12.34.56.789'   ## This is the IP of the VPS (Put the real IP of the VPS HERE)
+port = 8009                ## Can Be any port that is not being used.
 message = "computer2"
 client_socket.sendto(message.encode(),(host_ip, port))
 fps, st, frames_to_count, cnt = (0, 0, 20, 0)
