@@ -11,4 +11,5 @@ This is all done through the UDP Socket Server:
 3.  Run MEC code. 
 
 
-Need more Help and code examples: https://www.geeksforgeeks.org/sockets-python/#
+Need more Help and code examples: https://www.geeksforgeeks.org/sockets-python/#    
+                                  https://docs.python.org/3/library/socket.html
