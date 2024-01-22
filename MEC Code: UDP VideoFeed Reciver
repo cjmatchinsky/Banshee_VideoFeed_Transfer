@@ -1,3 +1,10 @@
+## Banshee Video Feed (Data Transfer) Code ##
+
+## This code is to access the UDP Socket Server that is hosted on and by the VPS,
+## Once the pi and the MEC connect, it will receive frame data from the pi and forward it to the MEC.
+## Once the MEC receives the video frame data it will convert it to a usable frame that can be used and viewed by CV2
+## For more understanding see the read me file or contact Cameron / Talia. 
+
 import cv2, socket
 import numpy as np
 import time
@@ -5,10 +12,22 @@ import base64
 
 BUFF_SIZE = 65536
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-host_ip = '12.34.56.789'   ## This is the IP of the VPS (Put the real IP of the VPS HERE)
-port = 8009                ## Can Be any port that is not being used.
+
+## This is the IP of the VPS (Put the real IP of the VPS HERE)
+#
+host_ip = '12.34.56.789'   
+
+## Can Be any port that is not being used.
+#
+port = 8009    
+
+
+## This is used to send a message to the VPS so know which IP (or connection to the Server) is the receiver.
+#
 message = "computer2"
 client_socket.sendto(message.encode(),(host_ip, port))
+
+
 fps, st, frames_to_count, cnt = (0, 0, 20, 0)
 
 while True:
