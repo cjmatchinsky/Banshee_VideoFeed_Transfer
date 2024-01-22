@@ -10,6 +10,9 @@ This is all done through the UDP Socket Server:
 2.  Run rPi Code.
 3.  Run MEC code. 
 
+Output:
+  The video Feed is around 2 FPS
 
-Need more Help and code examples: https://www.geeksforgeeks.org/sockets-python/#    
-                                  https://docs.python.org/3/library/socket.html
+Need more Help and code examples:
+https://www.geeksforgeeks.org/sockets-python/#
+https://docs.python.org/3/library/socket.html
