@@ -30,18 +30,32 @@ client_socket.sendto(message.encode(),(host_ip, port))
 
 fps, st, frames_to_count, cnt = (0, 0, 20, 0)
 
+
 while True:
+
+    ## Reviceces Data and Prints Out the frame data and socket number for testing purposes. 
+    #
     data, addr1 = client_socket.recvfrom(65536) 
     print(data,addr1)
-    # Send data to both clients
+
+
+    ## Converts the received data into the usable frame data that can be viewed.
+    #
     data = base64.b64decode(data,' /')
     npdata = np.frombuffer(data,dtype=np.uint8)
     frame = cv2.imdecode(npdata,1)
+
+
+    ## Shows the Live video frame data with a 0.1 sec delay 
+    #
     time.sleep(.1)
     #cv2.imshow("RECEIVING VIDEO",frame)
+
+
+    ## This is for testing purposes -- This saves the frame data and a JPEG image and then shows the image that was just saved.
+    #
     cv2.imwrite("received_fromPI_to_Computer2.jpg", frame)
     time.sleep(.4)
-
     frame_img = cv2.imread("received_fromPI_to_Computer2.jpg")
     cv2.imshow("RECEIVING VIDEO",frame_img)
     if frame is not None:
@@ -49,12 +63,16 @@ while True:
         cv2.imwrite("received_frame_TEST.jpg", frame)
     else:
         print('NO save')
-    
+
+
+    ## Exit the live video stream
+    #
     key = cv2.waitKey(1) & 0xFF
     if key == ord('q'):
         client_socket.close()
         break
 
 
-
+## Ends and closes socket server connection (between MEC and VPS(host) )
+#
 server_socket.close()
