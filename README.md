@@ -5,10 +5,10 @@ VPS - Receives Video frame and forwards to MEC.
 Cloud Computing (MEC) - Recices Video Feed from VPS.
 
 
-## Connection to Raspberry Pi (rPi):
-#(The Connection To the rPi is generally via SSH)
-2.  Download Advanced ip Scanner (https://www.advanced-ip-scanner.com/)
-3.  Open Advanced ip Scanner and make sure the rPi and the computer you are using are on the same WIFI
+## Connection to Raspberry Pi (rPi) via SSH:
+1.  If you need help contact either Cameron, Taila, Don.
+2.  Download Advanced ip Scanner (https://www.advanced-ip-scanner.com/).
+3.  Open Advanced ip Scanner and make sure the rPi and the computer you are using are on the same WIFI.
 4.  EduRom WIFI (school/CPP wifi) will not work.
 5.  Use the Advanced ip Scanner to find the IP of the rPi.
 6.  Open CMD (Terminal) and enter: SSH pi@123.456.41.240 (the Ip is an example use the ip of the rPi)
