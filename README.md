@@ -6,7 +6,7 @@ Cloud Computing (MEC) - Recices Video Feed from VPS.
 
 
 ## Connection to Raspberry Pi (rPi):
-(The Connection To the rPi is generally via SSH)
+#(The Connection To the rPi is generally via SSH)
 2.  Download Advanced ip Scanner (https://www.advanced-ip-scanner.com/)
 3.  Open Advanced ip Scanner and make sure the rPi and the computer you are using are on the same WIFI
 4.  EduRom WIFI (school/CPP wifi) will not work.
