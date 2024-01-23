@@ -5,6 +5,21 @@ VPS - Receives Video frame and forwards to MEC.
 Cloud Computing (MEC) - Recices Video Feed from VPS.
 
 
+## Connection to Raspberry Pi (rPi):
+1.  The Connection To the rPi is generally via SSH
+2.  Download Advanced ip Scanner (https://www.advanced-ip-scanner.com/)
+3.  Open Advanced ip Scanner and make sure the rPi and the computer you are using are on the same WIFI
+4.  EduRom WIFI (school/CPP wifi) will not work.
+5.  Use the Advanced ip Scanner to find the IP of the rPi.
+6.  Open CMD (Terminal) and enter: SSH pi@123.456.41.240 (the Ip is an example use the ip of the rPi)
+7.  When connected it will ask for a password and a yes or no question, hit yes.
+8.  The password will be stated in the Banshee Communication Discord.
+##
+##
+
+
+
+
 This is all done through the UDP Socket Server:
 1.  Run the VPS code First since it hosts  the server.
 2.  Run rPi Code.
