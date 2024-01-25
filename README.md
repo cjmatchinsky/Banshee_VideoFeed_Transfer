@@ -18,6 +18,12 @@ Cloud Computing (MEC) - Recices Video Feed from VPS.
 ##
 
 
+## Connection to Virtual private server (VPS) via SSH:
+1.  If you need help contact either Cameron, Taila, Don.
+2.  Open CMD (Terminal) and enter: SSH root@123.456.41.240 (the IP is an example use the IP of the VPS).
+##
+##
+
 
 
 This is all done through the UDP Socket Server:
