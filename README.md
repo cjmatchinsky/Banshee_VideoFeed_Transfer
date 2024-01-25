@@ -28,7 +28,7 @@ Login For (vultr) VPS - https://my.vultr.com/    Use the Google login with Bansh
 
 
 
-This is all done through the UDP Socket Server:
+## This is all done through the UDP Socket Server:
 1.  Run the VPS code First since it hosts  the server.
 2.  Run rPi Code.
 3.  Run MEC code. 
