@@ -5,6 +5,8 @@ VPS - Receives Video frame and forwards to MEC.
 Cloud Computing (MEC) - Recices Video Feed from VPS.
 
 
+Login For (vultr) VPS - https://my.vultr.com/    Use the Google login with Banshee UAV gmail.
+
 ## Connection to Raspberry Pi (rPi) via SSH:
 1.  If you need help contact either Cameron, Taila, Don.
 2.  Download Advanced ip Scanner (https://www.advanced-ip-scanner.com/).
